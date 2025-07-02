@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Admission Form</title>
+<link rel="stylesheet" href="Fstyle.css">
+
+</head>
+<body>
+  <div class="cotainer">
+    <h2>SUBMIT YOUR DETAILS</h2>
+  </div>
+
+<form id="admissionForm" method="post">
+
+Student Name: <input type="text" name="name" placeholder="First and last name"><br><br>
+
+Date of Birth: <input type="date" name="date" placeholder="DD/MM/YYYY"><br><br>
+
+Phone No.: <input type="number" name="ph" placeholder="10 digit number"><br><br>
+
+Email Id: <input type="email" name="eid" placeholder="example@gmail.com"><br><br>
+
+Address: <textarea cols="20" row="4" placeholder="Address" name="address"></textarea><br><br>
+<button type="submit">Submit</button>
+<button type="reset">Clear</button>
+<button id="deleteSelectedBtn" style="display: none;">Delete Selected</button>
+</form>
+<div class="subcontainer"
+<h2>Submitted Records</h2>
+</div>
+<table id="studentTable" style="display:none;">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Name</th>
+        <th>DOB</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>Address</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Entries will appear here -->
+    </tbody>
+  </table>
+  <script src="FormJS.js"></script>
+</body>
+</html>
+
